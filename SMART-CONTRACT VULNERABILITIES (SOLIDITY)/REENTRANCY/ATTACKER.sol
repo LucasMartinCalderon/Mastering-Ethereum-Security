@@ -19,7 +19,7 @@ attacker_fallback() function
         // step 1
         address_bank.deposit.value(10 ether)(); 
         // step 2
-        address_bank-withdraw(); 
+        address_bank.withdraw(); 
     }
     /** 
     * fallback function must have no name, no arguments
