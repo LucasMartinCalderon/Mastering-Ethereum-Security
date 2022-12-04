@@ -2,7 +2,7 @@ pragma solidity >= 0.7.0 < 0.9.0
 
 contract Victim_bank {
 	mapping(address => bool) bonus;
-	mapping(address => unit256) reward; 
+	mapping(address => uint256) reward; 
 	// rest of the code goes here
 	
 	function get_bonus_withdraw() {
